@@ -244,6 +244,7 @@ li.show-more-topics {
 
         & li.pm-list-item {
             position: relative;
+    font-size: 16px;
             padding: 1px 10px 1px 4px;
             margin-left: 2px;
 
@@ -484,6 +485,7 @@ li.top_left_recent_topics,
 li.top_left_scheduled_messages {
     position: relative;
     padding-top: 1px;
+    font-size: 16px;
     padding-bottom: 1px;
 
     & a {
@@ -716,6 +718,7 @@ li.topic-list-item {
 
     & input {
         padding-right: 20px;
+    font-size: 16px;
     }
 }
 
