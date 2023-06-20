@@ -658,6 +658,7 @@ body.has-overlay-scrollbar {
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 102;
 }
 
 #message_feed_container,
@@ -666,6 +667,10 @@ body.has-overlay-scrollbar {
     padding-top: calc(
         var(--navbar-fixed-height) + var(--header-padding-bottom)
     );
+}
+.column-left .left-sidebar{
+    padding-top: 0px;
+    z-index: 102;
 }
 
 .app-main {
@@ -683,12 +688,15 @@ body.has-overlay-scrollbar {
         padding-left: var(--left-sidebar-collapse-widget-gutter);
         background-color: #FBFBFA;
         border-right: 1px solid #ccc;
+        height: 100vh;
     }
 
 
     .column-right .right-sidebar {
         padding-left: 10px;
         width: 240px;
+        height: 100vh;
+        background-color: #FBFBFA;
     }
 
     .column-middle {
@@ -3174,6 +3182,7 @@ select.invite-as {
 #sidebar-logo-area{
     text-align: center;
     margin-bottom: 25px;
+    padding-top: 25px;
 }
 #sidebar-logo-area > div{
     position: relative;
@@ -3208,4 +3217,11 @@ select.invite-as {
 #streams_list{
     margin-top: 25px;
     margin-bottom: 25px;
+}
+/**
+full width
+ */
+.app-main{
+    max-width: 100%!important;
+    width: 100%!important;
 }
