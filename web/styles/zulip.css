@@ -596,6 +596,7 @@ body.has-overlay-scrollbar {
         justify-content: space-evenly;
         position: absolute;
         top: 10px;
+
         /* width of right column - width of gear icon(250px - 45px) */
         width: 205px;
 
@@ -680,7 +681,10 @@ body.has-overlay-scrollbar {
     .column-left .left-sidebar {
         width: var(--left-sidebar-width);
         padding-left: var(--left-sidebar-collapse-widget-gutter);
+        background-color: #FBFBFA;
+        border-right: 1px solid #ccc;
     }
+
 
     .column-right .right-sidebar {
         padding-left: 10px;
@@ -848,10 +852,14 @@ strong {
 }
 
 .sidebar-title {
-    color: hsl(0deg 0% 43%);
+    color: hsl(0deg 0% 1%);
     font-size: inherit;
-    font-weight: normal;
+    font-weight: bold;
     display: inline;
+    background-color: #fbd564;
+    padding-left: 10px;
+    padding-right: 10px;
+
 }
 
 .tooltip {
@@ -1266,10 +1274,14 @@ td.pointer {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 28px;
-        border: 1px solid var(--color-message-header-contents-border);
+        height: 40px;
+        /*
+        border: 1px solid var(--color-message-header-contents-border);*
+
         border-bottom-color: var(--color-message-header-contents-border-bottom);
         border-radius: 7px 7px 0 0;
+           */
+       background-color: #fbd564;
     }
 
     &.message_header_stream {
@@ -1348,19 +1360,24 @@ td.pointer {
         .message_header + .message_row {
             .messagebox {
                 padding-top: 5px;
+                margin-bottom: 30px;
             }
         }
     }
 
     .message_header {
         position: sticky;
+        margin-top: -20px;
         top: var(--navbar-fixed-height);
         /* Needs to be higher than the z-index of date_row. */
         z-index: 4;
+
+        /*
         box-shadow: 0 -1px 0 0 var(--color-background);
+    */
 
         .message-header-contents {
-            margin-top: var(--header-padding-bottom);
+            /*margin-top: var(--header-padding-bottom);*/
         }
 
         &.sticky_header {
@@ -1384,7 +1401,9 @@ td.pointer {
     top: 0.5px;
     text-decoration: none;
     font-weight: 600;
+
     overflow: hidden;
+
 
     .recipient-row-stream-icon {
         font-size: 12px;
@@ -1503,12 +1522,15 @@ td.pointer {
     z-index: 1;
     box-shadow: -1px -5px 0 5px var(--color-background),
         1px -5px 0 0 var(--color-background);
-    background-color: var(--color-background);
+    background-color: #FFFFFF;
 
     .message-header-contents {
+        /*
         border-color: var(--color-private-message-header-border);
         border-bottom-color: var(--color-private-message-header-border-bottom);
         background-color: var(--color-background-private-message-header);
+
+         */
     }
 
     .message_label_clickable {
@@ -3148,4 +3170,28 @@ select.invite-as {
     .zulip-icon {
         padding: 5px;
     }
+}
+
+#sidebar-logo-area{
+    text-align: center;
+}
+.header-main .brand{
+    display: none;
+}
+.column-middle{
+    border-right: 1px solid #ccc;
+}
+.column-middle, #main_div{
+    background-color: #FFFFFF;
+}
+.app{
+    background-color: #FBFBFA;
+}
+#compose-content-wrap{
+    margin: 0px 20px 20px 20px;
+}
+#compose-content-wrap > #compose-content{
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
 }

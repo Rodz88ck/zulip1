@@ -84,9 +84,9 @@ export function render() {
     }
 
     if (settings_data.using_dark_theme() && page_params.realm_night_logo_source !== "D") {
-        $("#realm-logo").attr("src", page_params.realm_night_logo_url);
+        $("#realm-logo, #realm-logo-sidebar").attr("src", page_params.realm_night_logo_url);
     } else {
-        $("#realm-logo").attr("src", page_params.realm_logo_url);
+        $("#realm-logo, #realm-logo-sidebar").attr("src", page_params.realm_logo_url);
     }
 
     change_logo_delete_button(

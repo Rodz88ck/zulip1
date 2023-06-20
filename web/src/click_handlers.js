@@ -858,7 +858,7 @@ export function initialize() {
         message_lists.update_recipient_bar_background_color();
     });
 
-    $("body").on("click", "#header-container .brand", (e) => {
+    $("body").on("click", "#header-container .brand, #sidebar-logo-area .brand", (e) => {
         e.preventDefault();
         e.stopPropagation();
 

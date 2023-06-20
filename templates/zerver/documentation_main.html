@@ -1,7 +1,7 @@
 {% extends "zerver/portico-help.html" %}
 {% set entrypoint = "help" %}
 
-{# Zulip user and API documentation. #}
+{# Sociail user and API documentation. #}
 {% block title %}
 <title>{{ PAGE_TITLE }}</title>
 {% endblock %}
@@ -11,7 +11,7 @@
     <div class="sidebar">
         <div class="content">
             {% if not page_is_policy_center %}
-            <h1><a href="https://zulip.com" class="no-underline">Zulip homepage</a></h1>
+            <h1><a href="https://zulip.com" class="no-underline">Sociail homepage</a></h1>
             <h1><a href="{{ doc_root }}" class="no-underline">{{ doc_root_title }} home</a></h1>
             {% endif %}
 
@@ -24,7 +24,7 @@
             {% endif %}
 
             {% if not page_is_policy_center %}
-            <h1 class="home-link"><a href="/" class="no-underline">Back to Zulip</a></h1>
+            <h1 class="home-link"><a href="/" class="no-underline">Back to Sociail</a></h1>
             {% endif %}
         </div>
     </div>
